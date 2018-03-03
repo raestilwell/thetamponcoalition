@@ -1,0 +1,345 @@
+/* Colors */
+$blue: #63cfcf;
+$green: #6fc0a0;
+$pink: #fd678d;
+$orange: #f26c4f;
+$yellow: #f7b733;
+$black: #000000;
+$white: #ffffff;
+$darkBlue: #103d3d;
+$lightBlue: #edffff;
+
+/* Fonts */
+$headerFont: 'Fjalla One', sans-serif;
+$regularFont:'Cantarell', sans-serif;
+
+$transition: all ease .3s;
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* === Global === */
+
+
+h1, h2, h3, h4, h5 {
+	font-family: $headerFont
+}
+
+h1 {
+	color: $white;
+	font-size: 5em;
+	line-height: 1;
+	letter-spacing: -.02em;
+}
+
+p {
+	font-family: $regularFont;
+	color: $darkBlue;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  background: $lightBlue;
+}
+
+body {
+  margin-bottom: 130px;
+  overflow-x: hidden!important;
+  background: $lightBlue;
+}
+
+/* === Link Styling === */
+
+a {
+	color: $pink;
+	text-decoration: none;
+	transition: all ease .2s;
+	cursor: pointer;
+		&:hover{
+			text-decoration: none;
+		}
+}
+
+.button {
+	background: $yellow;
+	padding: 10px 30px;
+	border-radius: 10px;
+	color: $white;
+	text-transform: uppercase;
+		&:hover, &:focus{
+			background: #e6a627;
+			color: #f0f0f0;
+			text-decoration: none;
+		}
+	&:focus{
+		outline: 0!important;
+	}
+}
+
+.form-button {
+	background: $yellow;
+	padding: 10px 30px;
+	border-radius: 10px;
+	color: $white;
+	text-transform: uppercase;
+		&:hover, &:focus{
+			background: #e6a627;
+			color: #f0f0f0;
+			text-decoration: none;
+		}
+	&:focus{
+		outline: 0!important;
+	}
+}
+
+/* === Navigation === */
+
+.navbar-default {
+    background-color: $darkBlue;
+    border-color: $darkBlue;
+    border-radius: 0;
+} 
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand{
+	color: $white;
+	font-family: $headerFont;
+	font-size: 1.2em;
+}
+
+.navbar-default .navbar-brand {
+	font-size: 1.7em;
+		& img {
+			width: 35px;
+			display: inline-block;
+			margin-top: -8px;
+		}
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+	color: $pink;
+}
+
+.donateButton{
+	background: $pink;
+	border-radius: 2px;
+	&:hover {
+		background: $white;
+	}
+}
+
+.navbar-default .navbar-nav .donateButton:hover {
+	background: #c74263;
+	color: $white;
+}
+
+.banner {
+	height: 150px;
+	background-color: $orange;
+	background-image: url('../img/banner.jpg');
+	margin-top: -20px;
+}
+
+/* === Sidebar Navigation === */
+
+.sidebar-nav, .recent-posts, .categories, .archives {
+	& a {
+		color: $darkBlue;
+		transition: $transition;
+			&:hover{
+				color: $pink;
+			}
+			&:focus{
+				color: $pink;
+			}
+	}
+	& ul {
+		list-style-type: none;
+		margin-left: -40px;
+			& li {
+				padding: 8px 0;
+				border-bottom: 1px solid #a0b8b8;
+					&:first-child {
+						border-top: 1px solid #a0b8b8;
+					}
+					& i {
+						color: $pink;
+					}
+					& ul {
+						list-style-type: none;
+						border: none;
+							& li {
+								border: none;
+								margin-bottom: -5px;
+								padding-left: 40px;
+									&:first-child{
+										border:none;
+									}
+							}
+					}
+			}
+	}
+}
+
+.contact {
+	margin-top: 20px;
+	color: $darkBlue;
+		& a {
+			color: $darkBlue;
+			transition: $transition;
+				&:hover{
+					color: $pink;
+				}
+				&:focus{
+					color: $pink;
+				}
+		}
+}
+
+/* === Homepage Specific Styling === */
+
+#home {
+	min-height: 100%;
+	overflow: hidden;
+	background-color: #8bd3d4; 
+	background-image: url('../img/homebg.jpg');
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: 90% 100%;
+	& .vcenter {
+		margin-top: 80px;
+	}
+}
+	
+.welcomeblurb p {
+	color: $white;
+	margin-bottom: 25px;
+}
+
+/* === Iframe === */
+
+/* === Contact Form === */
+.contact-form {
+	border-radius: 5px;
+	margin-top: 15px;
+	padding: 10px;
+	background: $blue;
+	min-height: 350px;
+}
+
+/* === Blog === */
+
+.blog-preview {
+	background: $blue;
+	padding: 15px;
+}
+
+.blog-container {
+	background: $white;
+	padding: 10px;
+}
+
+.responsive-circle {
+    margin: 0 auto 20px;
+    width: 80%;
+}
+.responsive-circle::after {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 0;
+    margin-bottom: 20px;
+    padding-bottom: 100%;
+    width: 100%;
+}
+
+.responsive-circle div {
+    color: white;
+    float: left;
+    line-height: 1em;
+    margin-top: -3em;
+    padding-top: 50%;
+    text-align: center;
+    width: 100%;
+}
+
+.responsive-circle div:last-child{
+	margin-top: -1.5em;
+}
+
+.date-circle::after {
+    background: $orange;
+}
+
+.comment-circle::after {
+    background: $pink;
+}
+
+/* === Footer === */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 130px;
+  padding-top: 15px;
+  background-color: $darkBlue;
+  color: $white;
+  		& p {
+	  		color: $white;
+  		} 
+  		& ul {
+	  		list-style-type: none;
+	  			& li {
+		  			display: inline;
+	  			}
+	  			& i {
+	  				color: $white;
+	  					
+	  			}
+	  	}
+}
+
+.icon-background {
+	color: $pink;
+	transition: $transition;
+}	
+
+.fa-stack:hover .fa-circle, .fa-stack:focus .fa-circle{
+	color: #c74263;
+}
+
+.email-label {
+	font-family: $headerFont;
+	font-size: 1.5em;
+	color: $orange;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.spacer {
+	min-height: 20px;
+}
+
+/* === Bootstrap Overrides === */
+
+.breadcrumb {background: $lightBlue; border: 0px solid rgba(245, 245, 245, 1); border-radius: 4px; display: block;}
+
+.blog-search-section {
+	margin-top: 15px;
+}
+
+#blog-search:focus {outline: 0!important;}
+
+/* === Media Queries === */
+

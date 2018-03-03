@@ -1,0 +1,257 @@
+/* Colors */
+/* Fonts */
+/* === Global === */
+h1, h2, h3, h4, h5 {
+  font-family: "Fjalla One", sans-serif; }
+
+h1 {
+  color: #ffffff;
+  font-size: 5em;
+  line-height: 1;
+  letter-spacing: -.02em; }
+
+p {
+  font-family: "Cantarell", sans-serif;
+  color: #103d3d; }
+
+html {
+  position: relative;
+  min-height: 100%;
+  background: #edffff; }
+
+body {
+  margin-bottom: 130px;
+  overflow-x: hidden !important;
+  background: #edffff; }
+
+/* === Link Styling === */
+a {
+  color: #fd678d;
+  text-decoration: none;
+  transition: all ease .2s;
+  cursor: pointer; }
+  a:hover {
+    text-decoration: none; }
+
+.button {
+  background: #f7b733;
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: #ffffff;
+  text-transform: uppercase; }
+  .button:hover, .button:focus {
+    background: #e6a627;
+    color: #f0f0f0;
+    text-decoration: none; }
+  .button:focus {
+    outline: 0 !important; }
+
+.form-button {
+  background: #f7b733;
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: #ffffff;
+  text-transform: uppercase; }
+  .form-button:hover, .form-button:focus {
+    background: #e6a627;
+    color: #f0f0f0;
+    text-decoration: none; }
+  .form-button:focus {
+    outline: 0 !important; }
+
+/* === Navigation === */
+.navbar-default {
+  background-color: #103d3d;
+  border-color: #103d3d;
+  border-radius: 0; }
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
+  color: #ffffff;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.2em; }
+
+.navbar-default .navbar-brand {
+  font-size: 1.7em; }
+  .navbar-default .navbar-brand img {
+    width: 35px;
+    display: inline-block;
+    margin-top: -8px; }
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #fd678d; }
+
+.donateButton {
+  background: #fd678d;
+  border-radius: 2px; }
+  .donateButton:hover {
+    background: #ffffff; }
+
+.navbar-default .navbar-nav .donateButton:hover {
+  background: #c74263;
+  color: #ffffff; }
+
+.banner {
+  height: 150px;
+  background-color: #f26c4f;
+  background-image: url("../img/banner.jpg");
+  margin-top: -20px; }
+
+/* === Sidebar Navigation === */
+.sidebar-nav a, .recent-posts a, .categories a, .archives a {
+  color: #103d3d;
+  transition: all ease 0.3s; }
+  .sidebar-nav a:hover, .recent-posts a:hover, .categories a:hover, .archives a:hover {
+    color: #fd678d; }
+  .sidebar-nav a:focus, .recent-posts a:focus, .categories a:focus, .archives a:focus {
+    color: #fd678d; }
+.sidebar-nav ul, .recent-posts ul, .categories ul, .archives ul {
+  list-style-type: none;
+  margin-left: -40px; }
+  .sidebar-nav ul li, .recent-posts ul li, .categories ul li, .archives ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #a0b8b8; }
+    .sidebar-nav ul li:first-child, .recent-posts ul li:first-child, .categories ul li:first-child, .archives ul li:first-child {
+      border-top: 1px solid #a0b8b8; }
+    .sidebar-nav ul li i, .recent-posts ul li i, .categories ul li i, .archives ul li i {
+      color: #fd678d; }
+    .sidebar-nav ul li ul, .recent-posts ul li ul, .categories ul li ul, .archives ul li ul {
+      list-style-type: none;
+      border: none; }
+      .sidebar-nav ul li ul li, .recent-posts ul li ul li, .categories ul li ul li, .archives ul li ul li {
+        border: none;
+        margin-bottom: -5px;
+        padding-left: 40px; }
+        .sidebar-nav ul li ul li:first-child, .recent-posts ul li ul li:first-child, .categories ul li ul li:first-child, .archives ul li ul li:first-child {
+          border: none; }
+
+.contact {
+  margin-top: 20px;
+  color: #103d3d; }
+  .contact a {
+    color: #103d3d;
+    transition: all ease 0.3s; }
+    .contact a:hover {
+      color: #fd678d; }
+    .contact a:focus {
+      color: #fd678d; }
+
+/* === Homepage Specific Styling === */
+#home {
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #8bd3d4;
+  background-image: url("../img/homebg.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 90% 100%; }
+  #home .vcenter {
+    margin-top: 80px; }
+
+.welcomeblurb p {
+  color: #ffffff;
+  margin-bottom: 25px; }
+
+/* === Iframe === */
+/* === Contact Form === */
+.contact-form {
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 10px;
+  background: #63cfcf;
+  min-height: 350px; }
+
+/* === Blog === */
+.blog-preview {
+  background: #63cfcf;
+  padding: 15px; }
+
+.blog-container {
+  background: #ffffff;
+  padding: 10px; }
+
+.responsive-circle {
+  margin: 0 auto 20px;
+  width: 80%; }
+
+.responsive-circle::after {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 0;
+  margin-bottom: 20px;
+  padding-bottom: 100%;
+  width: 100%; }
+
+.responsive-circle div {
+  color: white;
+  float: left;
+  line-height: 1em;
+  margin-top: -3em;
+  padding-top: 50%;
+  text-align: center;
+  width: 100%; }
+
+.responsive-circle div:last-child {
+  margin-top: -1.5em; }
+
+.date-circle::after {
+  background: #f26c4f; }
+
+.comment-circle::after {
+  background: #fd678d; }
+
+/* === Footer === */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 130px;
+  padding-top: 15px;
+  background-color: #103d3d;
+  color: #ffffff; }
+  footer p {
+    color: #ffffff; }
+  footer ul {
+    list-style-type: none; }
+    footer ul li {
+      display: inline; }
+    footer ul i {
+      color: #ffffff; }
+
+.icon-background {
+  color: #fd678d;
+  transition: all ease 0.3s; }
+
+.fa-stack:hover .fa-circle, .fa-stack:focus .fa-circle {
+  color: #c74263; }
+
+.email-label {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.5em;
+  color: #f26c4f; }
+
+.text-left {
+  text-align: left; }
+
+.spacer {
+  min-height: 20px; }
+
+/* === Bootstrap Overrides === */
+.breadcrumb {
+  background: #edffff;
+  border: 0px solid whitesmoke;
+  border-radius: 4px;
+  display: block; }
+
+.blog-search-section {
+  margin-top: 15px; }
+
+#blog-search:focus {
+  outline: 0 !important; }
+
+/* === Media Queries === */
+
+/*# sourceMappingURL=styles.css.map */
